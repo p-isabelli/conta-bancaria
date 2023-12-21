@@ -2,7 +2,6 @@ package conta;
 
 import java.util.Scanner;
 
-import conta.model.Conta;
 import conta.model.ContaCorrente;
 import conta.model.ContaPoupanca;
 import conta.util.Cores;
@@ -15,14 +14,6 @@ public class Menu {
 
 		int opcao;
 
-        // Teste da Classe Conta
-		Conta c1 = new Conta(3, 123, 1, "Mariana", 500000.0f);
-		c1.visualizar();
-		c1.sacar(12000.0f);
-		c1.visualizar();
-		c1.depositar(5000.0f);
-		c1.visualizar();
-        
 		// Teste da Classe Conta Corrente
 		ContaCorrente cc1 = new ContaCorrente(1, 123, 1, "José da Silva", 0.0f, 1000.0f);
 		cc1.visualizar();
@@ -64,7 +55,6 @@ public class Menu {
 			
 			if(opcao == 9) {
 				System.out.println("\nBanco do Brazil com Z - O seu futuro começa aqui!");
-                sobre();
 				leia.close();
 				System.exit(0);
 			}
@@ -108,11 +98,5 @@ public class Menu {
 			}
         }
 	}
-	public static void sobre() {
-		System.out.println("\n*********************************************************");
-		System.out.println("Projeto Desenvolvido por: ");
-		System.out.println("Generation Brasil - generation@generation.org");
-		System.out.println("github.com/conteudoGeneration");
-		System.out.println("*********************************************************");
-	}
+
 }
